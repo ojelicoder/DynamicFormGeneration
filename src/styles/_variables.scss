@@ -1,0 +1,33 @@
+/** color variables **/
+$color-black: #000;
+$color-white: #fff;
+$color-steam: #ddd;
+$color-dire-wolf: #262525;
+$color-beluga: #f1f1f1;
+$color-bright-mint: #9eff8f;
+$color-light-pastel-green: #b3f7a8;
+$color-mid-green: #4db147;
+$color-faded-red: #d74949;
+$color-misty-lawn: #e1f9e2;
+
+/** Screen size variables **/
+$screenxs: 575px;
+$screensm: 768px;
+$screenmd: 992px;
+
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 900px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+
+    @media screen and(max-width: $screenmd){
+        max-width: 100%;
+        width: auto;
+    }
+}

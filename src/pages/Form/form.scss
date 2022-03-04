@@ -1,0 +1,100 @@
+@import '../../styles/variables';
+
+.form{
+    width: 100%;
+    font-size: 14px;
+    color: $color-dire-wolf;
+
+    &-title{
+        font-weight: 400;
+        font-size: 18px;
+
+        &_wrapper{
+            background: url(../../images/ic-filter.png) no-repeat;
+            background-size: 15px;
+            padding-left: 18px;
+            margin-left: -18px;
+            background-position: left 5px;
+        }
+    }
+    &-subtitle{
+        font-size: 12px;
+    }
+    &-inner{
+        &_buttons{
+            position: relative;
+        }
+        &_rows{
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid $color-steam;
+        }
+        &_cols{
+            display: flex;
+            margin: 20px 0;
+        }
+        &_space, &_date{
+            width: 20%
+        }
+        &_button{
+            background: #8a97f1;
+            color: $color-white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 0;
+            top: 12px;
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+
+    &-personal_number{
+        &-fill{
+            left: 40%;
+        }
+        &-backup{
+            &_fill{
+                right: 15%;
+            }
+        }
+    }
+
+    &-personal_number, &-personal_number-backup, &-inner{
+        width: 40%
+    }
+}
+
+.table-tabs{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-around;
+
+    &_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_item{
+        border: 1px solid $color-steam;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        width: 50%;
+
+        &:last-child{
+            border-left: 0;
+        }
+
+        &.active{
+            background-color: $color-beluga;
+        }
+    }
+
+    &:nth-child(2), &:nth-child(3){
+        .table-tabs_item{
+            pointer-events: none;
+        }
+    }
+}
